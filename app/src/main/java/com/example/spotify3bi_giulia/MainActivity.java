@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        img.findViewById(R.id.img_musica);
+        img=findViewById(R.id.img_musica);
         Glide.with(this).load("https://img.youtube.com/vi/CIFrr1dqj5M/0.jpg").into(img);
 
         tocador = MediaPlayer.create(getApplicationContext(), R.raw.house);
